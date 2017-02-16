@@ -1,9 +1,9 @@
 body{
-  background-color: #ccc;
+  background-color: rgba(204, 204, 204, 0.22);
 }
 .wrapper {
     width: 1000px;
-    padding: 40px 0 60px;
+    padding: 40px;
     margin: 0 auto;
     background: #FFF;
 }
