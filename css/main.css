@@ -196,3 +196,7 @@ code[class*="language-"], pre { color: #000; text-shadow: 0 1px #FFF; font-size:
 .highlight .vg { color: #008080; }
 .highlight .vi { color: #008080; }
 .highlight .il { color: #099; }
+/*自己加的css*/
+.top-large img{
+  float: left;
+}
