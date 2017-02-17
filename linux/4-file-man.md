@@ -1,5 +1,6 @@
 ---
 title: 文件系统结构
+layout: default
 ---
 
 ### 文件系统（ File System ）

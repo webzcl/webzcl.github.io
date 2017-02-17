@@ -1,5 +1,6 @@
 ---
 title: nodejs 安装
+layout: default
 ---
 
 安装 node 的方式很多，这里推荐用 nvm 装 node。
