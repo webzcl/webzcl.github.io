@@ -3,7 +3,6 @@ title: 进入 Linux 命令行的黑色世界
 layout: default
 ---
 
-
 ### 为什么要用 Linux ?
 
 北京的（包扩硅谷）的职业开发者一般都用苹果本（ Macbook ）做开发（写代码）。我们是做 Web 开发的，Web 项目要运行在服务器（ server ）上，服务器的业界标准是使用  Linux 做操作系统呢。
