@@ -1,5 +1,6 @@
 ---
 title: React 牵手 Express
+layout: default
 ---
 
 仅仅有了 API ，功能还不完全。需要有前端来调用 API ，完成整个小功能。

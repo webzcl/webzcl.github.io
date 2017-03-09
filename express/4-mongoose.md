@@ -1,5 +1,6 @@
 ---
 title: 使用 Mongoose 连接 JS 和 MongoDB
+layout: default
 ---
 
 

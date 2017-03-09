@@ -1,5 +1,6 @@
 ---
 title: 上手 Express 框架
+layout: default
 ---
 
 前面课程中介绍了 React , React 是一个 **前端框架** ，前端框架是运行在浏览器
