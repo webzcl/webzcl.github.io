@@ -147,6 +147,7 @@ http-server .
 
 就能把我们的前端项目启动到一个 http 服务器上了。
 
+FIXME：有时候会出现 bundle.js 更新了，但是刷新页面看不到效果的情况，应该是有缓存相关的问题。
 
 ### 为何 state 要设置两次
 
@@ -185,7 +186,7 @@ curl -X GET 'http://localhost:3000/username'
 
 如果后端没有问题，应该可以看到下面的输出
 
-```
+```json
 {username: 'happypeter'}
 ```
 
@@ -194,7 +195,7 @@ curl -X GET 'http://localhost:3000/username'
 另注：如果执行出现如下错误：
 
 ```
-➜  express-backend git:(master) ✗ curl -X GET localhost:3000/username
+$ curl -X GET localhost:3000/username
 curl: (7) Failed to connect to localhost port 3000: Connection refused
 ```
 
@@ -247,13 +248,12 @@ XMLHttpRequest cannot load http://localhost:3000/. No 'Access-Control-Allow-Orig
 
 `XMLHttpRequest` 是发 HTTP 请求的底层机制，是浏览器自带功能。上面的报错翻译如下：
 
-> 无法加载后台 http://localhost:3000 . 被请求的资源中没有设置
+>无法加载后台 http://localhost:3000 . 被请求的资源中没有设置
 > Access-Control-Allow-Origin 头部。源头设置为 Null ，所以不允许
 > 访问。
 
 
-
-Access-Control-Allow-Origin 字面意思：允许来源访问控制。服务器上的默认是不允许其他网址（或者网址相同，但是端口号不同）的网站请求资源的，如果需要开通权限，就需要设置这个选项。
+Access-Control-Allow-Origin 字面意思：访问控制允许来源。服务器上的默认是不允许其他网址（或者网址相同，但是端口号不同）的网站请求资源的（也就是默认不允许**跨域请求**），如果需要开通权限，就需要设置这个选项。
 
 
 那么，如何开通服务器上的这个资源访问权限呢？就是要**在服务器**上做下面的设置
@@ -292,9 +292,7 @@ Date: Thu, 08 Dec 2016 01:51:44 GMT
 Connection: keep-alive
 ```
 
-curl 是专门用来测试 API 的一个命令行工具，`-I` 选项用来专门活动服务器
-返回的 header 。命令返回的信息，就是服务器端被请求资源的的 header 。
-很明确是没有 Access-Control-Allow-Origin 这一项的。下面我们安装 cors 这个包，就可以解决这个问题。
+curl 的 `-I` 选项用来专门拿到服务器返回的 header 。命令返回的信息，就是服务器端被请求资源的的 header 。上面很明显是没有 Access-Control-Allow-Origin 这一项的。下面我们安装 cors 这个包，就可以解决这个问题。
 
 
 具体步骤如下：
@@ -308,6 +306,13 @@ npm install --save cors
 再次提醒：这个包要安装到后台代码中。
 
 然后按照文档，添加下面两行代码，再重启服务器代码：
+
+```js
+const cors = require('cors')
+app.use(cors());
+```
+
+接下来再用 `curl -I` 看看输出如下：
 
 ```
 HTTP/1.1 200 OK
@@ -363,4 +368,4 @@ componentWillMount() {
 
 ### 总结
 
-至此，前台页面上成功显示出了，后台的数据。这样，一个前后分离架构，通过 API 通信的应用的 Hello World 就完成了。
+至此，前台页面上成功显示出了，后台的数据。这样，一个前后端分离架构，通过 API 通信的应用，我们就完成了。
