@@ -247,7 +247,7 @@ XMLHttpRequest cannot load http://localhost:3000/. No 'Access-Control-Allow-Orig
 
 `XMLHttpRequest` 是发 HTTP 请求的底层机制，是浏览器自带功能。上面的报错翻译如下：
 
->无法加载后台 http://localhost:3000 . 被请求的资源中没有设置
+> 无法加载后台 http://localhost:3000 . 被请求的资源中没有设置
 > Access-Control-Allow-Origin 头部。源头设置为 Null ，所以不允许
 > 访问。
 
