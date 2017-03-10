@@ -5,6 +5,10 @@ layout: default
 
 ### 呵呵
 
-- 脚本：script  start  {nodemon index.js}
+- package.json里脚本如下设置："scripts": {
+    "start":"nodemon index.js"
+  }
+
+  用  npm run start 即可运行
+
 - 添加 cors 包的作用就是允许前台所有请求
-- 用 http-server 会产生浏览器缓存，在浏览器设置清理即可。
