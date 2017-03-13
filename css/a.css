@@ -35,6 +35,7 @@ blockquote {
     white-space: -pre-wrap;
     white-space: -o-pre-wrap;
     word-wrap: break-word;
+    padding: 14px;
 }
 .wrapper h2{
   text-align: center;
