@@ -36,3 +36,8 @@ blockquote {
     white-space: -o-pre-wrap;
     word-wrap: break-word;
 }
+.wrapper h2{
+  text-align: center;
+  color: red;
+  margin-bottom: 20px;
+}
