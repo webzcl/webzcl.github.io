@@ -5,6 +5,7 @@ layout: default
 
 ## HTTP 简介
 
+
 HTTP 全称就是“超文本传输协议”，超文本就是 HTML 。
 我们的浏览器和服务器进行通信，就是通过 HTTP 来进行的。
 
