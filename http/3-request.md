@@ -1,5 +1,6 @@
 ---
 title:  HTTP 请求的格式
+layout: default
 ---
 
 ## HTTP 请求的格式

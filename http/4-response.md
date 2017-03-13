@@ -1,5 +1,6 @@
 ---
 title: HTTP 响应的格式
+layout: default
 ---
 
 ## HTTP 响应的格式
