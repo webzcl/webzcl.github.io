@@ -7,6 +7,7 @@ body{
     width: 1000px;
     padding: 40px;
     margin: 0 auto;
+    background-color: #fff;
 }
 blockquote {
     background-color: #FCF8E3;
@@ -26,7 +27,7 @@ blockquote {
 .wrapper pre {
     color: #767676;
     border: 1px solid #DCDCDC;
-    background-color: #DCDCDC;
+    background-color: rgba(204, 204, 204, 0.27);
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
