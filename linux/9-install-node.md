@@ -3,6 +3,8 @@ title: nodejs 安装
 layout: default
 ---
 
+## nodejs 安装
+
 安装 node 的方式很多，这里推荐用 nvm 装 node。
 
 安装 nvm 可以直接到 github 上找到 [nvm](https://github.com/creationix/nvm#install-script) 这个仓库查看安装命令

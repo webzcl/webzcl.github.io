@@ -3,6 +3,8 @@ title: 你好 Git
 layout: default
 ---
 
+## 你好 Git
+
 Git 和 Github 是两个东西。Git 是一个软件，作者是 Linus ，安装到我们的笔记本上。Github 是一个网站，作者是 Tom ，浏览器中访问 github.com 可以使用。
 
 ### Github 的正确使用姿势

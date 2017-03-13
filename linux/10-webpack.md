@@ -3,6 +3,8 @@ title: nodejs 安装
 layout: default
 ---
 
+## nodejs 安装
+
 nodejs 的模块分为 3 类，核心模块，第三方模块，以及自定义的模块
 
 ```js
