@@ -1,6 +1,6 @@
 ---
 title: 模块化拆分
-layout : dedault
+layout : default
 ---
 
 ## 模块化拆分
