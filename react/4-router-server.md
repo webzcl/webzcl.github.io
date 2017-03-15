@@ -1,6 +1,6 @@
 ---
 title: 修改 server 配置
-layout : dedault
+layout : default
 ---
 
 ## 修改 server 配置
