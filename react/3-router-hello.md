@@ -2,6 +2,7 @@
 title: 写一个 react-router 的 Hello World
 layout : default
 ---
+
 ## 写一个 react-router 的 Hello World
 
 来写一个使用 browserHistory 的 react-router 的 Hello World ，涉及到为何要使用服务器，
