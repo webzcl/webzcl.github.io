@@ -87,6 +87,32 @@ Please make sure you have the correct access rights
 执行失败，解决方法就是添加 ssh 公钥到 github.com 。
 
 
+### win10推送
+
+在已经克隆到本地仓库的基础上，且已安装win10的[git管理工具](https://git-scm.com/download/win),
+各种版本对应参考链接[win10安装Git步骤和常用的Git命令](https://blog.csdn.net/wxw520zdh/article/details/64461825)
+
+首先执行：
+
+```
+git add -A
+```
+添加仓库的所有改动
+
+再执行：
+
+```
+git commit -m"your msg"
+```
+提交版本消息
+
+最后执行：
+
+```
+git push
+```
+将所有改动推送至已添加的远端仓库
+
 ### 第三步：添加 ssh key
 
 现在需要达成开发机和 github.com 的互信。
